@@ -1,0 +1,16 @@
+  .btn {
+    display: inline-block;
+    background-color: #ff0f43;
+    cursor: pointer;
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.2, 3, 0.4, 1);
+    user-select: none;
+  }
+
+  .btn:hover {
+    transform: scale(1.1, 1.1);
+  }
+
+  .btn:active {
+    transform: scale(1.05, 1.05);
+  }

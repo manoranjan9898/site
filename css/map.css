@@ -1,0 +1,49 @@
+a[href^="https://maps.google.com/maps"] {
+    display: none !important;
+}
+
+.gm-style-cc,
+.gmnoprint a,
+.gmnoprint span {
+    display: none;
+}
+.gmnoprint div {
+    background: none !important;
+}
+
+.gmap {
+
+    margin-top: 2%;
+    float: right;
+    display: inline-block;
+    border-radius: 15px;
+    width: 600px;
+    height: 320px;
+    box-shadow: 0 0 20px -9px #000000;
+    background: #ffffff;
+    font-family: 'Lato', 'Nunito Sans', sans-serif;
+    max-width: calc(100vw - 60px);
+}
+
+#gmap {
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    width: inherit;
+    height: inherit;
+    display: absolute;
+
+}
+
+/* @media only screen and (max-width: 720px) {
+    .gmap {
+      height: 450px;
+      margin: calc(50vh - 225px) auto;
+      overflow: hidden
+    }
+    #gmap {
+      width: 100%;
+      height: 200px;
+    }
+  }  */

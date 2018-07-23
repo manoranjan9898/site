@@ -1,0 +1,373 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+
+
+
+
+/*Fullscreen Menu*/
+
+#main-nav ul li a:not(.btn) {
+
+    position: relative;
+    text-transform: none;
+    font-weight: 200;
+    display: inline-block;
+
+}
+/* color: #0084ff; */
+
+#main-nav ul li a:not(.btn):hover {
+
+    /* color: #ff0f43; */
+    color: #8f8f8f;
+
+}
+
+#main-nav ul li a:not(.btn):after {
+
+    content:'';
+    position: absolute;
+    border-bottom: 2px solid #cecece;
+    border-radius: 10px;
+    top: 90%;
+    -webkit-transition: all 250ms ease-in-out;
+
+
+}
+  
+:after {
+
+    right: 100%;
+    left: 0;
+
+}
+
+#main-nav ul li a:not(.btn):hover:after {
+
+    right: 0;
+
+}
+
+img {
+
+    pointer-events: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+.logo {
+
+    display: inline-block;
+
+
+}
+
+
+.logo img {
+
+    float: top;
+    opacity: 100%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: .5em;
+
+}
+
+.logo img:hover {
+
+    opacity: 50%;
+
+}
+
+img:hover {
+
+    opacity: 50%;
+
+}
+
+#slide_out_menu .logo img {
+
+    width: auto;
+    height: auto;
+    position: relative;
+
+}
+
+
+.fa.fa-heart {
+
+    opacity: 100%;
+    color: #ff0f43;
+
+}
+
+.fa.fa-heart:hover {
+
+    opacity: 50%;
+
+}
+
+#footer p {
+
+    font-size: 20px;
+    color: #ff0f43;
+    color:#f31545
+
+}
+
+.fa.fa-facebook:hover {
+
+    color: #4778ff;
+
+}
+
+.hvr-float {
+    
+    color: #777;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    margin: 22px 12px 10px 12px;
+
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+  }
+  .hvr-float:hover,
+  .hvr-float:focus,
+  .hvr-float:active {
+    transform: translateY(-8px);
+  }
+
+  body, .smooth-container { 
+
+      scroll-behavior: smooth;
+
+}
+
+
+#plan .price-table .table-inner .feature-list li:not(i) {
+
+    text-align: left;
+    font-size: 16px;
+
+}
+
+h1, h2, h3, h4, p, li {
+
+    font-family: 'Lato', 'Nunito Sans', 'Open Sans', 'Montserrat', sans-serif;
+    font-weight: 300;
+
+}
+
+
+#map {
+    
+    align-content: left;
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+    overflow: hidden;
+    float: left;
+    padding-left: 0em;
+    padding-right: 40em;
+    padding-top: 40em;
+
+}
+
+
+a img:not(.logo-img) {
+    
+    max-width: 70%;
+    max-height: 70%;
+
+}
+
+.play-store img {
+
+    margin-top: 3px;
+    
+
+}
+
+.play-store, .app-store, .btn {
+
+    display: block;
+   -webkit-transition: all 250ms ease;
+
+}
+
+.play-store:hover, .app-store:hover, .btn:hover {
+
+    opacity: 0.7;
+    -webkit-transition: all 150ms ease;
+
+}
+
+.store-badges a {
+
+    word-wrap: break-word;
+    display: inline-block;
+
+}
+
+.store-badges a img {
+
+    display: block;
+
+}
+
+.store-badges {
+
+    max-width: 100%;
+    display: inline;
+
+}
+
+.fa {
+
+    display: inline-block;
+    max-width: inherit;
+    max-height: inherit;
+
+}
+
+.socials li a .fa.fa-envelope:hover {
+
+    color: #ff0f43;
+
+}
+
+img.map-dotted {
+
+    max-height: 50%;
+    max-width: 50%;
+    float: right;
+    margin-right: 20%;
+
+}
+
+.ring-container {
+    position: relative;
+}
+
+.circle {
+    width: 45px;
+    height: 45px;
+    background-color: #ff0f43;
+    border-radius: 50%;
+    position: absolute;
+    top: 23px;
+    left: 23px;
+}
+
+.pulse {
+    border: 18px solid #ff0f43;
+    -webkit-border-radius: 30px;
+    height: 55px;
+    width: 55px;
+    position: relative;
+    left: 18px;
+    top: 18px;
+    -webkit-animation: pulsate 1s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+    opacity: 0.0;
+}
+@-webkit-keyframes pulsate {
+    0% {-webkit-transform: scale(0.6, 0.6); opacity: 1.0;}
+    50% {opacity: 0.3;}
+    100% {-webkit-transform: scale(1.9, 1.9); opacity: 0.0;}
+}
+
+.circle {
+
+    left: 433px;
+    top: 390px;
+
+}
+
+.pulse {
+
+    left: 428px;
+    top: 385px;
+
+}
+
+.scroll-arrow {
+
+    font-size: 150px;
+
+}
+
+.type-js h1 {
+
+    color: white;
+
+}
+
+#header p {
+
+    font-size: 30px;
+
+}
+
+.storebadges a img {
+
+    max-width: 200px;
+
+}
+
+.playstore, .appstore {
+
+    display: inline-block;
+   -webkit-transition: all 250ms ease-in-out;
+
+}
+
+.playstore:hover, .appstore:hover {
+
+    opacity: 0.7;
+    -webkit-transition: all 150ms ease-in-out;
+
+}
+
+#navigation i {
+
+    opacity: 1;
+    -webkit-transition: all 150ms ease-in;
+
+}
+
+#navigation i:hover {
+
+    opacity: 0.4;    
+    -webkit-transition: all 150ms ease-in;
+    
+}
+
+#main-nav li {
+
+    margin-top: 10px;
+
+}
